@@ -1,10 +1,8 @@
 # Predictive Maintenance: Clustering + Failure Classification
 
-Given live sensor readings from industrial machines (air and process temperature, rotational speed, torque, tool wear), the goal is to characterize the machine's operating regime and flag it as at risk of failure before it happens.
+Characterize a machine's operating regime from live sensor readings and flag it as at risk of failure before it happens — clustering and classification wired into one pipeline, where the cluster a machine falls into is itself used as an input to the failure classifier.
 
-Personal project built to practice an end-to-end ML workflow: from raw sensor data to a persisted, deployable model, combining an unsupervised and a supervised stage into a single pipeline rather than treating them as separate exercises.
-
-Dataset: [AI4I 2020 Predictive Maintenance Dataset](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) (UCI Machine Learning Repository) — 10,000 records, 5 continuous sensor features, a product quality variant (L/M/H), and a binary failure label (~3.4% positive rate).
+Dataset: [AI4I 2020 Predictive Maintenance Dataset](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) (UCI Machine Learning Repository), 10,000 operating cycles. Each row has 5 sensor readings (air and process temperature, rotational speed, torque, tool wear), a product quality variant (`L`/`M`/`H` — low/medium/high, 60%/30%/10% of the data), and whether a failure occurred (~3.4% of cycles). The quality variant isn't just a label: failure rate drops from 3.9% (`L`) to 2.8% (`M`) to 2.1% (`H`) in the raw data, so lower-quality units genuinely fail more often.
 
 ## Results
 
