@@ -17,6 +17,8 @@ Dataset: [AI4I 2020 Predictive Maintenance Dataset](https://archive.ics.uci.edu/
 
 Clustering surfaced three physically interpretable regimes: one **high-speed / low-torque** regime, and two **low-speed / high-torque** regimes differing mainly by temperature and tool wear. Classifier metrics are reported on the minority (failure) class rather than overall accuracy, since the ~3.4% failure rate makes accuracy uninformative on its own.
 
+![ROC curve of the failure classifier on held-out test data](roc_curve.png)
+
 ## Approach
 
 1. **Cleaning** – drop row identifiers and the failure-mode flag columns (`TWF`, `HDF`, `PWF`, `OSF`, `RNF`), which are sub-components of the target itself and would otherwise leak it.
