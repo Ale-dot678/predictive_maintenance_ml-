@@ -1,6 +1,6 @@
 # Predictive Maintenance: Clustering + Failure Classification
 
-Given live sensor readings from industrial machines (temperature, rotational speed, torque, tool wear), can we characterize the machine's operating regime and flag it as at risk of failure before it happens?
+Given live sensor readings from industrial machines (temperature, rotational speed, torque, tool wear), the goal is to characterize the machine's operating regime and flag it as at risk of failure before it happens.
 
 Personal project built to practice an end-to-end ML workflow: from raw sensor data to a persisted, deployable model, combining an unsupervised and a supervised stage into a single pipeline rather than treating them as separate exercises.
 
